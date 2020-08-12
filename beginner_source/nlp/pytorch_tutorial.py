@@ -64,22 +64,34 @@ print(T)
 # matrix, indexing into the matrix gives you a vector. If you have a 3D
 # tensor, then indexing into the tensor gives you a matrix!
 #
+# 3D 텐서가 뭐라고 생각하십니까? 한번 이렇게 생각해봅시다.
+# 벡터를 예시로 들자면, 벡터를 인덱싱 하면 스칼라가 나옵니다.
+# 행렬을 예시로 들면, 행렬을 인덱싱 할 경우 벡터가 나옵니다.
+# 그리고 3D 텐서는 인덱싱할 경우 행렬이 나옵니다!
 # A note on terminology:
 # when I say "tensor" in this tutorial, it refers
 # to any torch.Tensor object. Matrices and vectors are special cases of
 # torch.Tensors, where their dimension is 1 and 2 respectively. When I am
 # talking about 3D tensors, I will explicitly use the term "3D tensor".
 #
+# 알아두어야 할 용어:
+# 제가 이번 튜토리얼에서 "텐서" 라고 언급하는 것은, 모든 torch와 Tensor 오브젝트와 맞습니다.
+# 각각 1차원과 2차원인 행렬과 벡터는 torch의 특이한 예시입니다.
+# 3D 텐서에 대해 말할땐, "3D 텐서"라는 용어를 명시할 것 입니다.
 
 # Index into V and get a scalar (0 dimensional tensor)
+# V로 인덱스 하고 스칼라 얻기(0 차원 텐서)
 print(V[0])
 # Get a Python number from it
+# Python 숫자 얻기
 print(V[0].item())
 
 # Index into M and get a vector
+# M으로 인덱스 하고 벡터 얻기
 print(M[0])
 
 # Index into T and get a matrix
+# T로 인덱스하고 행렬 
 print(T[0])
 
 

@@ -103,11 +103,17 @@ print(T[0])
 # Float and Long will be the most common.
 #
 
+# 여러분들은 다른 데이터 타입의 텐서도 만들 수 있습니다. 정수 타입의 텐서를 만드려면
+# torch.tensor([[1,2], [3,4]]) (리스트 내부의 모든 요소가 정수인 경우)를 써 봅시다.
+# 또한 ``dtype=torch.data_type``을 입력해 데이터 타입을 특정해 낼 수 있습니다.
+# Float 과 Long이 대부분을 차지 할 겁니다.
 
 ######################################################################
 # You can create a tensor with random data and the supplied dimensionality
 # with torch.randn()
 #
+
+# torch.randn()으로 주어진 차원과 랜덤한 데이터로 텐서를 만들 수 있습니다. 
 
 x = torch.randn((3, 4, 5))
 print(x)
@@ -118,6 +124,12 @@ print(x)
 # ~~~~~~~~~~~~~~~~~~~~~~~
 #
 # You can operate on tensors in the ways you would expect.
+
+# 텐서 실행해보기
+# ~~~~~~~~~~~~~~~~~~~~~~~
+#
+# 여러분들이 생각하는대로 텐서를 실행할 수 있습니다.
+
 
 x = torch.tensor([1., 2., 3.])
 y = torch.tensor([4., 5., 6.])

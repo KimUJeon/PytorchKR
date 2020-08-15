@@ -145,6 +145,8 @@ print(z)
 # One helpful operation that we will make use of later is concatenation.
 #
 
+# 사용 가능한 수많은 명령 작업의 전체 목록은 ' <https://pytorch.org/docs/torch.html> ' 을 봅시다.
+
 # By default, it concatenates along the first axis (concatenates rows)
 x_1 = torch.randn(2, 5)
 y_1 = torch.randn(3, 5)
